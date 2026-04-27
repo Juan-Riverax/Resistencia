@@ -12,9 +12,13 @@ public class Resistencia {
     private JComboBox<Colores> box4;
     private JComboBox<Colores> box5;
     private JPanel panel;
-    private JLabel total;
+    private JLabel band1;
     private JLabel maximo;
     private JLabel minimo;
+    private JLabel band2;
+    private JLabel band3;
+    private JLabel band4;
+    private JLabel toti;
 
     public Resistencia () {
         box1.setModel(new DefaultComboBoxModel<>(Colores.values()));
@@ -27,7 +31,7 @@ public class Resistencia {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Colores valor = (Colores) box1.getSelectedItem();
-                int banda1;
+                int banda1=0;
                 switch (valor){
                     case Negro: banda1 = 0; break;
                     case Cafe:  banda1 = 10; break;
@@ -40,13 +44,14 @@ public class Resistencia {
                     case Gris: banda1 =  80; break;
                     case Blanco: banda1 = 90; break;
                 }
+                band1.setText(String.valueOf(banda1));
             }
         });
         box2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Colores valor = (Colores) box2.getSelectedItem();
-                int banda2;
+                int banda2=0;
                 switch (valor){
                     case Negro: banda2 = 0; break;
                     case Cafe:  banda2 = 1; break;
@@ -59,14 +64,14 @@ public class Resistencia {
                     case Gris: banda2 =  8; break;
                     case Blanco: banda2 = 9; break;
                 }
-
+            band2.setText(String.valueOf(banda2));
             }
         });
         box3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Colores valor = (Colores) box2.getSelectedItem();
-                int banda3;
+                int banda3=0;
                 switch (valor){
                     case Negro: banda3 = 1; break;
                     case Cafe:  banda3 = 10; break;
@@ -79,6 +84,15 @@ public class Resistencia {
                     case Gris: banda3 =  100000000; break;
                     case Blanco: banda3 = 1000000000; break;
             }
+        band3.setText(String.valueOf(banda3));
+        }});
+
+
+        box4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
         });
     }
 
@@ -86,5 +100,3 @@ public class Resistencia {
         return panel;
     }
 }
-
-

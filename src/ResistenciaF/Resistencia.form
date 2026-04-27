@@ -54,7 +54,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="20fd" class="javax.swing.JLabel">
+      <component id="20fd" class="javax.swing.JLabel" binding="toti">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -78,7 +78,7 @@
           <text value="Min"/>
         </properties>
       </component>
-      <component id="86822" class="javax.swing.JLabel" binding="total">
+      <component id="86822" class="javax.swing.JLabel" binding="band1">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -97,6 +97,30 @@
       <component id="5abe5" class="javax.swing.JLabel" binding="minimo">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="2f67c" class="javax.swing.JLabel" binding="band2">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="e10ba" class="javax.swing.JLabel" binding="band3">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="66c11" class="javax.swing.JLabel" binding="band4">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
